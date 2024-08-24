@@ -1,33 +1,152 @@
-
-*{
-    box-sizing: border-box;
- 
+* {
+  box-sizing: border-box;
 }
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
-body{
-    font-size: 1.6rem;
-    font-family: "Poppins", sans-serif;
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
 }
 
 /* =====================Chung================================ */
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.main-content{
-    width: 1170px;
-   
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f7cd59;
 }
 
 /* ==============================Header======================= */
-
-header .body{
-    display: flex;
+header.fixed {
+  background-color: #f7cd59;
+  position: sticky;
+  top: -28px;
 }
 
-header .nav{
-    display: flex;
+header .main-content {
+  padding-top: 36px;
+  padding-bottom: 8px;
 }
+
+header .body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .nav {
+  display: flex;
+  margin-left: auto;
+}
+header .nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .nav ul li a {
+  position: relative;
+  padding: 8px 21px;
+  font-size: 1.6rem;
+  color: #4e4e4d;
+}
+header .nav ul li a:hover {
+  color: rgb(0, 0, 0);
+  font-size: 1.9rem;
+  text-shadow: #0000 0px 0px 0px;
+  font-weight: 600;
+}
+
+header .nav ul li.active a {
+  color: #171100;
+  font-weight: 600;
+}
+header .nav ul li.active a::after {
+  left: 21px;
+
+  position: absolute;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 2px;
+  background: #171100;
+  border-radius: 1px;
+}
+.btn {
+  min-width: 144px;
+  margin-left: 49px;
+  padding: 0 16px;
+  background-color: #171100;
+  border-radius: 999px;
+  color: #fff;
+  display: inline-block;
+  line-height: 50px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+/* ==========================hero====================================================== */
+main .hero {
+  background-color: #f7cd59;
+}
+main .hero .body {
+  padding-top: 56px;
+
+  display: flex;
+}
+.hero .media-block {
+  position: relative;
+  width: 48%;
+}
+.hero .content-block {
+  width: 52%;
+}
+
+.hero .media-block .hero-summary {
+    width: 270px;
+  position: absolute;
+  right: 0;
+  bottom: 46px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: #0000000d 0px 16px 32px 0px;
+  line-height: 16px;
+  padding: 24px;
+}
+.hero .media-block .hero-summary .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .media-block .hero-summary .item + .item{
+    margin-top: 22px;
+}
+.hero-summary .item .icon {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff9e8;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.hero-summary .label {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+.hero-summary .title{
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+} 
