@@ -1,0 +1,33 @@
+
+*{
+    box-sizing: border-box;
+ 
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* =====================Chung================================ */
+
+a{
+    text-decoration: none;
+}
+
+.main-content{
+    width: 1170px;
+   
+}
+
+/* ==============================Header======================= */
+
+header .body{
+    display: flex;
+}
+
+header .nav{
+    display: flex;
+}
