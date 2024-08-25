@@ -10,6 +10,9 @@ body {
 }
 
 /* =====================Chung================================ */
+:root{
+  --font-heading:Sen ,sans-serif;
+}
 
 a {
   text-decoration: none;
@@ -98,6 +101,7 @@ main .hero {
 }
 main .hero .body {
   padding-top: 56px;
+  padding-bottom: 65px;
 
   display: flex;
 }
@@ -106,11 +110,13 @@ main .hero .body {
   width: 48%;
 }
 .hero .content-block {
+  padding-top: 64px;
+  padding-left:  130px;
   width: 52%;
 }
 
 .hero .media-block .hero-summary {
-    width: 270px;
+  width: 270px;
   position: absolute;
   right: 0;
   bottom: 46px;
@@ -125,8 +131,8 @@ main .hero .body {
   justify-content: center;
   align-items: center;
 }
-.hero .media-block .hero-summary .item + .item{
-    margin-top: 22px;
+.hero .media-block .hero-summary .item + .item {
+  margin-top: 22px;
 }
 .hero-summary .item .icon {
   display: flex;
@@ -144,9 +150,79 @@ main .hero .body {
   font-size: 1.4rem;
   line-height: 1.86;
 }
-.hero-summary .title{
-    color: #171100;
-    font-size: 1.8rem;
+.hero-summary .title {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+
+.hero .media-block .thumb {
+  width: 470px;
+  height: 685px;
+  border-radius: 20px;
+  display: inline;
+  line-height: 16px;
+  object-fit: cover;
+}
+
+.hero .content-block .heading{
+  color: #171100;
+    font-family:var(--font-heading) ;
+    font-size: 5.8rem;
     font-weight: 600;
+    line-height: 1.17;
+    letter-spacing: -1.16px;
+}
+.hero {
+ 
+    color: #5f5b53;
+    font-size: 1.8rem;
     line-height: 1.67;
-} 
+}
+.desc1{
+  margin-top: 22px;
+  margin-bottom: 38px;
+}
+.hero .cta-group{
+  display: flex;
+  margin-bottom: 48px;
+}
+.hero .watch-video{
+  margin-left: 28px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: none;
+  border: none;
+}
+
+.hero .watch-video .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+}
+
+.hero .watch-video p{
+  margin-left: 14px;
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+
+.content-block .desc strong{
+  margin-right: 15px;
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 1.23;
+}
+.content-block .desc strong.str-70{
+  margin-left: 27px;
+}
