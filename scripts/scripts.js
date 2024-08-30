@@ -36,6 +36,20 @@ document.addEventListener('DOMContentLoaded', function() {
         interval: 100,
     });
 
-   
+    ScrollReveal().reveal('.widget2-top', {
+        origin: 'top',
+        distance: '245px',
+        duration: 1000,
+        easing: 'ease-in-out',
+        interval: 100,
+    });
+    ScrollReveal().reveal('.widget2-top-lv2', {
+        origin: 'top',
+        distance: '245px',
+        duration: 1500,
+        easing: 'ease-in-out',
+        interval: 100,
+    });
+
 
 });
