@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
@@ -15,6 +16,9 @@ button:hover {
 }
 .btn:hover {
   cursor: pointer;
+  background-color: #f7cd59;
+  color: black;
+
 }
 :root {
   --font-heading: Sen, sans-serif;
@@ -37,7 +41,7 @@ a {
   max-width: calc(100% - 48px);
   margin-left: auto;
   margin-right: auto;
-  background-color: #f7cd59;
+  
 }
 
 /* ==============================Header======================= */
@@ -45,6 +49,8 @@ header.fixed {
   background-color: #f7cd59;
   position: sticky;
   top: -28px;
+  border-bottom:0.5px solid ;
+  z-index: 9;
 }
 
 header .main-content {
@@ -108,6 +114,10 @@ header .nav ul li.active a::after {
   font-size: 1.6rem;
   font-weight: 600;
   text-align: center;
+}
+
+.btn.btn-signUp:hover{
+background-color: rgb(147, 128, 77);
 }
 /* ==========================hero====================================================== */
 main .hero {
@@ -239,13 +249,17 @@ main .hero .body {
 .content-block .desc strong.str-70 {
   margin-left: 27px;
 }
+
+.hero .content-block .btn:hover{
+  background-color: rgb(147, 128, 77);
+}
 /* =======================Popular======================================== */
 .popular .main-content {
   background-color: #fff;
 }
 .popular {
   padding: 65px 0;
-  margin-top: 135px;
+  margin: 135px 0;
 }
 .popular .popular-top {
   display: flex;
@@ -310,4 +324,134 @@ main .hero .body {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.67;
+}
+
+/* ======================================feedback========================================= */
+.feedback{
+  background-color: rgb(46, 33, 0);
+  padding: 96px;
+}
+
+
+.feedback .feedback-item{
+  display: flex;
+  justify-content: space-between;
+}
+.feedback .main-content .avatar{
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 18px;
+}
+
+.feedback .feedback-item .info h2{
+ color: #fff;
+ font-size: 2.4rem;
+ margin-bottom: 5px;
+
+}
+
+.feedback .feedback-item .info .desc{
+    color: #b1b0ad;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    /* margin-bottom: 28px; */
+}
+
+.feedback .feedback-item .info .dots{
+  display: flex;
+ gap: 6px;
+}
+.feedback .feedback-item .info .dots .dot.active,
+.feedback .feedback-item .info .dots .dot:hover{
+  background-color: #ffb900;
+}
+
+.feedback .feedback-item .info .dots .dot{
+  border-radius: 50%;
+  height: 6px;
+  width: 6px;
+background-color: #634700;
+}
+
+/* =============================content phải ==================================================================== */
+
+.feedback .feedback-item .content{
+width: 65%;
+
+}
+
+.feedback .feedback-item .content blockquote{
+  color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    line-height: 1.54;
+}
+
+/* ========================feature============================================= */
+.feature {
+  margin: 135px 0;
+}
+.feature .main-content .body{
+  padding: 65px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature .main-content .body .images{
+  gap: 30px;
+  display: flex;
+}
+
+.feature .main-content .body .img{
+ 
+  object-fit: cover;
+  width: 270px;
+  height: 405px;
+  border-radius: 16px;
+}
+.feature .main-content .body .images .img:first-child{
+  margin-top: 34px;
+}
+
+.feature .main-content .body .content{
+ 
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.feature .main-content .body .content .desc{
+
+  color: #5f5b53;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.feature .main-content .body .content .btn{
+  margin-left: 0;
+}
+.feature .main-content .body2{
+  flex-direction: row-reverse;
+}
+.feature .main-content .body2 .img{
+  width: 470px;
+  height: 440px;
+}
+
+.feature .main-content .body2 .content{
+  width: 49%;
+}
+
+/* ==========================popular 2==================================== */
+.plopular2 .popular-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.plopular2 .popular-top .desc{
+  text-align: center;
 }
